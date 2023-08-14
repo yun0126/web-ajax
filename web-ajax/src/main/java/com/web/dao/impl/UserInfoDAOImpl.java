@@ -17,11 +17,10 @@ public class UserInfoDAOImpl implements UserInfoDAO {
 	}
 
 	@Override
-	public UserInfoVO selectUserInfo(SqlSession session, UserInfoVO uiNum) {
-		// TODO Auto-generated method stub
-		return session.selectOne("com.web.mapper.UserInfoMapper.selectUserInfo", uiNum);
+	public UserInfoVO selectUserInfo(SqlSession session, int uiNum) {
+	    return session.selectOne("com.web.mapper.UserInfoMapper.selectUserInfo", uiNum);
 	}
-
+	
 	@Override
 	public int insertUserInfo(SqlSession session, UserInfoVO user) {
 		// TODO Auto-generated method stub

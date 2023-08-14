@@ -1,16 +1,21 @@
 package com.web.service;
 
 import java.util.List;
+import java.util.Map;
 
-import org.apache.ibatis.session.SqlSession;
+import javax.servlet.http.HttpSession;
 
 import com.web.vo.UserInfoVO;
 
 public interface UserInfoService {
-	List<UserInfoVO> selectUserInfoList(UserInfoVO user);
-	UserInfoVO selectUserInfo(UserInfoVO uiNum);
+	List<UserInfoVO> selectUserInfoList(UserInfoVO userInfo);
+
+	UserInfoVO selectUserInfo(int uiNum);
+
 	int insertUserInfo(UserInfoVO user);
+
 	int updateUserInfo(UserInfoVO user);
+
 	int deleteUserInfo(int uiNum);
-	
-}
+
+	}

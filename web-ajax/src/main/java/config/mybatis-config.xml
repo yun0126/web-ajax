@@ -19,7 +19,7 @@
 		
 	</environments>
 	<mappers>
-		<mapper resource="mapper/UserInfoMapper.xml"/>
+		<mapper resource="mapper/ydh/UserInfoMapper.xml"/>
 	</mappers>
 	
 </configuration>

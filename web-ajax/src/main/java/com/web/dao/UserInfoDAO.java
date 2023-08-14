@@ -8,7 +8,7 @@ import com.web.vo.UserInfoVO;
 
 public interface UserInfoDAO {
 	List<UserInfoVO> selectUserInfoList(SqlSession session, UserInfoVO uiNum);
-	UserInfoVO selectUserInfo(SqlSession session, UserInfoVO uiNum);
+	UserInfoVO selectUserInfo(SqlSession session, int uiNum);
 	int insertUserInfo(SqlSession session, UserInfoVO user);
 	int updateUserInfo(SqlSession session, UserInfoVO user);
 	int deleteUserInfo(SqlSession session, int uiNum);
